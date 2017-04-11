@@ -31,7 +31,44 @@ angular.module('web', ['ionic', 'web-config', 'web-controllers', 'web-services']
                     controller: 'ProfileCtrl'
                 }
             }
-        });
+        })
+        .state('web.legal', {
+            url: '/legal',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/legal.html',
+                    controller: 'LegalCtrl'
+                }
+            }
+        })
+        .state('web.voltabio', {
+            url: '/voltabio',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/voltabio.html',
+                    controller: 'VoltaCtrl'
+                }
+            }
+        })
+        .state('web.service', {
+            url: '/service',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/service.html',
+                    controller: 'ServiceCtrl'
+                }
+            }
+        })
+        .state('web.corporate', {
+            url: '/corporate',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/corporate.html',
+                    controller: 'CorporateCtrl'
+                }
+            }
+        })
+        ;
 
   $urlRouterProvider.otherwise('/web/profile');
 
