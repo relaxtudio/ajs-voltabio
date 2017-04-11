@@ -2,6 +2,18 @@ angular.module('web-controllers', ['ngAnimate'])
 
     .controller('WebCtrl', function($scope, $state, $ionicLoading, $ws) {
         $scope.test = "TEST";
+        var scale = function() {
+            var width = window.innerWidth;
+            if (width < 980) {
+                document.body.style.zoom = width / 980;
+            } else {
+                document.body.style.zoom = 1;
+            }
+        };
+        window.onresize = function () {
+            scale();
+        }
+        scale();
     })
 
     .controller('ProfileCtrl', function($scope) {

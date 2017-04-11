@@ -1,6 +1,10 @@
 /* Empty. Add your own CSS if you like */
 body {
-	min-width: 980px;
+
+}
+
+.main {
+	width: 100%;
 }
 
 .main-container {

@@ -3404,7 +3404,7 @@ body.grade-c {
  * https://msdn.microsoft.com/en-us/library/ie/hh869615(v=vs.85).aspx
  */
 @-ms-viewport {
-  width: device-width; }
+  /*width: device-width;*/ }
 
 .scroll-bar {
   position: absolute;
@@ -3559,6 +3559,7 @@ ion-infinite-scroll {
   height: 100%;
   background-color: #fff;
   overflow: hidden; }
+
 
 .view-container {
   position: absolute;
