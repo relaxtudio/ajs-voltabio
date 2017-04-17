@@ -16,6 +16,28 @@ body {
 	margin-right: auto;
 }
 
+.header .oi {
+	height: 50px;
+	display: table;
+}
+
+.header .oi .logo {
+	width: 250px;
+	height: 100%;
+	display: table-cell;
+}
+
+.header .oi .sitemap {
+	width: 100%;
+	display: table-cell;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.header .oi .sitemap .menu {
+	font-size: 11px;
+}
+
 .header .bottom-line {
 	height: 40px;
 	width: 100%;
@@ -97,6 +119,17 @@ body {
 	padding: 0;
 }
 
+.content .slide,
+.content .desc {
+	float: left;
+	height: 100%;
+}
+
+.content .desc {
+	text-align: justify;
+	font-size: 14px;
+}
+
 .grid {
 	margin-top: 10px;
 	float: left;
@@ -135,7 +168,6 @@ body {
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
-  /*position: absolute;*/
   -moz-transition:all .5s;
   -o-transition:all .5s;
   -webkit-transition:all .5s;
@@ -144,6 +176,7 @@ body {
 
 [ui-view].ng-enter {
   opacity: 0;
+  transition-delay: .5s;
 }
 
 [ui-view].ng-enter-active {
@@ -181,6 +214,7 @@ body {
 	[ui-view].ng-enter {
 	  opacity: 0;
 	  left: -calc(50% - 490px);
+	  transition-delay: .5s;
 	}
 
 	[ui-view].ng-enter-active {
