@@ -74,6 +74,7 @@ button:focus {outline:0;}
 	padding: 20px;
 	text-align: center;
 	font-size: 11px;
+	bottom: 0;
 }
 
 .content:before,
@@ -182,6 +183,26 @@ button:focus {outline:0;}
 	width: 320px;
 }
 
+.banner {
+	height: 120px;
+}
+
+.company-menu {
+	width: 60%;
+	padding-left: 40px;
+}
+.list-cp {
+	height: 30px;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.link-cp, .link-cp.select {
+	text-decoration:none;
+	color: black;
+	padding-left: 10px;
+	
+}
 .grid {
 	margin-top: 10px;
 	float: left;
