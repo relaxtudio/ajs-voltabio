@@ -1,6 +1,6 @@
 <div class="content">
 	<div class="grid banner w1">
-		<h1 style="margin-left: 40px;" ng-click="content = 'default'">Company<br />Profile</h1>
+		<h1 style="margin-left: 40px;" ng-click="content = 'default'"><a style="text-decoration:none;">Company<br />Profile</a></h1>
 	</div>
 	<div class="grid banner w2">
 		<h2><i>"Customer Satisfaction, High Performance Production, High Quality Product"</h2>
@@ -9,15 +9,15 @@
 	<div class="grid w1">
 		<ul class="company-menu">
 			<!--<li class="list-cp"><a class="link-cp" href="#">Vision & Mission</a></li>-->
-			<li class="list-cp bottom-border"><a class="link-cp">Company Culture</a></li>
-			<li class="list-cp bottom-border"><a class="link-cp" ng-click="content = 'history'">Company History</a></li>
-			<li class="list-cp bottom-border"><a class="link-cp">Management</a></li>
-			<li class="list-cp bottom-border"><a class="link-cp">CSR & Awards</a></li>
+			<!--<li class="list-cp bottom-border"><a class="link-cp">Company Culture</a></li>-->
+			<li class="list-cp bottom-border"><a class="link-cp" ng-click="content = 'history'">Company History & Culture</a></li>
+			<li class="list-cp bottom-border"><a class="link-cp" ng-click="content = 'manajemen'">Management Structure</a></li>
+			<li class="list-cp bottom-border"><a class="link-cp" ng-click="content = 'csr'">CSR & Awards</a></li>
 		</ul>
 	</div>
 	
 	<div class="grid w2" style="text-align:justify;">
-		<div ng-show="content == 'default'">
+		<div ng-show="content == 'default'" style="padding-right:20px;">
 			<h2 class="bottom-border blue">Company Overview</h2>
 			<h3>Vision:<br />To Provide Benefits Through Technological Innovation VOLTABIO And After Sales Service In The Industry On An Ongoing Basis And Provide Social Responsibility Programs</h3>
 			<h3>Mission:<br />To Provide Added Value Through Appropriate Products</h3>
@@ -25,6 +25,8 @@
 			</p>
 		</div>
 		<ng-include src="'templates/content/profile-history.html'" ng-show="content == 'history'"></ng-include>
+		<ng-include src="'templates/content/profile-manajemen.html'" ng-show="content == 'manajemen'"></ng-include>
+		<ng-include src="'templates/content/profile-csr.html'" ng-show="content == 'csr'"></ng-include>
 	</div>
 </div>
 <ng-include src="'includes/footer.html'"></ng-include>

@@ -10,7 +10,7 @@ body {
 	display: none;
 }
 
-button {
+button, a {
 	cursor: pointer;
 }
 
@@ -203,6 +203,10 @@ button:focus {outline:0;}
 	padding-left: 10px;
 	
 }
+.legal {
+	padding-left: 20px;
+}
+
 .grid {
 	margin-top: 10px;
 	float: left;
