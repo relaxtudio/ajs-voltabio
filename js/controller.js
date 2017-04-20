@@ -31,6 +31,8 @@ ajs.controller('HomeCtrl', ['$scope', 'video', '$interval', '$rootScope', functi
 
 ajs.controller('ProfileCtrl', function($scope) {
 	$scope.$parent.select = 1;
+	$scope.content = 'default';
+	
 })
 
 ajs.controller('LegalCtrl', function($scope) {
