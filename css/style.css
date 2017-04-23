@@ -75,6 +75,7 @@ button:focus {outline:0;}
 	text-align: center;
 	font-size: 11px;
 	bottom: 0;
+	color: #BFBFBF;
 }
 
 .content:before,
@@ -344,6 +345,9 @@ button:focus {outline:0;}
   to {opacity: 1}
 }
 
+.transparent {
+	opacity: 0;
+}
 .timeline {
   position: relative;
   width: 660px;
