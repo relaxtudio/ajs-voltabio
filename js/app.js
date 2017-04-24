@@ -49,12 +49,12 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
-		.state('corporate', {
-			url: '/corporate',
+		.state('client', {
+			url: '/client',
 			views: {
 				'content': {
-					templateUrl: 'templates/corporate.html',
-					controller: 'CorporateCtrl'
+					templateUrl: 'templates/client.html',
+					controller: 'ClientCtrl'
 				}
 			}
 		})

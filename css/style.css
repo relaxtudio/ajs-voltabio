@@ -185,10 +185,10 @@ button:focus {outline:0;}
 }
 
 .banner {
-	height: 120px;
+	height: 130px;
 }
 
-.company-menu, .voltabio-menu {
+.company-menu, .product-menu{
 	width: 70%;
 	padding-left: 40px;
 }
@@ -204,9 +204,54 @@ button:focus {outline:0;}
 	padding-left: 10px;
 	
 }
-.legal, .voltabio, .service, .corporate {
-	padding-left: 20px;
-	padding-right: 20px;
+
+.grid-wrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-columns: 340px 640px;
+}
+.grid-wrap-legal {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 540px 440px;
+}
+
+.volt-sub {
+    text-indent: .5em;
+    border-left: .25em solid gray;
+	margin-top: -1.25em;
+    margin-left: 1em;
+}
+
+.v-sub {
+	list-style: none;
+	position: relative;
+    bottom: -0.65em;
+	height: 25px;
+}
+
+.v-sub:before {
+    content: "";
+	display: inline-block;
+	width: 3em;
+	height: 0;
+	position: relative;
+	left: -3em;
+	border-top: .25em solid gray;
+}
+
+.client-det{
+	margin:auto;
+	border-collapse: collapse;
+}
+
+.produk-det {
+	border-collapse: collapse;
+}
+
+.client-det td, .client-det th, .produk-det td, .produk-det th{
+	border: 1px solid black;
 }
 
 .grid {
@@ -233,13 +278,7 @@ button:focus {outline:0;}
 .h3 {
 	height: 200px;
 }
-.volt1 {
-	width: 280px;
-}
 
-.volt2 {
-	width: 660px;
-}
 .full {
 	width: 100%;
 }

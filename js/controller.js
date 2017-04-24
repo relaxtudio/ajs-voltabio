@@ -46,6 +46,6 @@ ajs.controller('ServiceCtrl', function($scope) {
 	$scope.$parent.select = 4;
 })
 
-ajs.controller('CorporateCtrl', function($scope) {
+ajs.controller('ClientCtrl', function($scope) {
 	$scope.$parent.select = 5;
 })
