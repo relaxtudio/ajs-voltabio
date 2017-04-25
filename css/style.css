@@ -299,6 +299,10 @@ button:focus {outline:0;}
 	cursor: pointer;
 }
 
+.csr img {
+	max-width: 100%;
+}
+
 /* universal */
 
 [ui-view].ng-enter, [ui-view].ng-leave {
