@@ -40,6 +40,7 @@ ajs.controller('LegalCtrl', function($scope) {
 
 ajs.controller('VoltabioCtrl', function($scope) {
 	$scope.$parent.select = 3;
+	$scope.content = 'default';
 })
 
 ajs.controller('ServiceCtrl', function($scope) {

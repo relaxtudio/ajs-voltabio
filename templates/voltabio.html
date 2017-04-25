@@ -2,11 +2,11 @@
 	<div class="grid banner bottom-border full">
 		<h1 style="margin-left:20px;">All About <span style="color:#ff3e3e;">VOLTABIO</span></h1>
 			<ul class="volt-sub" style="margin-left:40px;">
-				<li class="v-sub"><a style="margin-left: -40px;"><span style="color:#ff3e3e;">VOLTABIO</span> Overview</a></li>
-				<li class="v-sub"><a style="margin-left: -40px;"><span style="color:#ff3e3e;">VOLTABIO</span> Techology</a></li>
+				<li class="v-sub" ng-click="content = 'default'"><a style="margin-left: -40px;"><span style="color:#ff3e3e;">VOLTABIO</span> Overview</a></li>
+				<li class="v-sub" ng-click="content = 'technology'"><a style="margin-left: -40px;"><span style="color:#ff3e3e;">VOLTABIO</span> Techology</a></li>
 			</ul>
 	</div>
-	<div class="voltabio">
+	<div class="voltabio" ng-show="content == 'default'">
 		<h2 align="center" style="margin-top:150px;">The Philosophy</h2>			
 		<p align="center">VOLTABIO product is taken from the name of the chemical elements, VOLTA means "rows of chemical elements" and BIO means "life".</p>
 		<ul class="timeline">
@@ -62,6 +62,9 @@
 				</div>
 			</li>
 		</ul>
-		</div>
+	</div>
+	<div class="voltabio" ng-show="content == 'technology'">
+		<ng-include src="'templates/content/voltabio-tech.html'"></ng-include>
+	</div>
 </div>
 <ng-include src="'includes/footer.html'"></ng-include>
