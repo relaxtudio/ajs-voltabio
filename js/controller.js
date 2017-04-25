@@ -2,10 +2,13 @@ var test = function (a) {
 	console.log(a);
 }
 
-ajs.controller('HomeCtrl', ['$scope', 'video', '$interval', '$rootScope', function($scope, video, $interval, $rootScope) {
+ajs.controller('HomeCtrl', ['$scope', 'video', '$interval', '$rootScope', '$state', function($scope, video, $interval, $rootScope, $state) {
 	$scope.$parent.select = 0;
 	video.addSource('mp4', 'content/final.mp4');
 	$scope.counter = 1;
+	$scope.goTo = function (call, param) {
+		$state.go(call, {page: param});
+	};
 	$scope.addImg = function (n) {
 		$scope.showImg($scope.counter += n);
 	};
@@ -24,7 +27,6 @@ ajs.controller('HomeCtrl', ['$scope', 'video', '$interval', '$rootScope', functi
 		}, 3000);
 	var dereg = $rootScope.$on('$locationChangeSuccess', function() {
 		$interval.cancel($scope.reload);
-		console.log('pindah');
 		dereg();
 	});
 }])
@@ -38,9 +40,13 @@ ajs.controller('LegalCtrl', function($scope) {
 	$scope.$parent.select = 2;
 })
 
-ajs.controller('VoltabioCtrl', function($scope) {
+ajs.controller('VoltabioCtrl', function($scope, $state) {
 	$scope.$parent.select = 3;
 	$scope.content = 'default';
+	var page = $state.params.page;
+	if (page == 'technology') {
+		$scope.content = 'technology';
+	}
 })
 
 ajs.controller('ServiceCtrl', function($scope) {

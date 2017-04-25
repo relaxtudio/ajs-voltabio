@@ -126,6 +126,8 @@ button:focus {outline:0;}
 	width: 640px;
 	height: 360px;
 	padding: 0;
+	border-top-left-radius: 90px;
+	border-bottom-right-radius: 90px;
 }
 
 .content .slide,

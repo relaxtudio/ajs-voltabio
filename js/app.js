@@ -33,6 +33,9 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('voltabio', {
 			url: '/voltabio',
+			params: {
+				page: null
+			},
 			views: {
 				'content': {
 					templateUrl: 'templates/voltabio.html',
