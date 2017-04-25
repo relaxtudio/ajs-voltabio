@@ -45,6 +45,9 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('service', {
 			url: '/service',
+			params: {
+				page: null
+			},
 			views: {
 				'content': {
 					templateUrl: 'templates/service.html',
