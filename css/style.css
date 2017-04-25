@@ -295,6 +295,12 @@ button:focus {outline:0;}
 	color: #0762D3;
 }
 
+.list-cp {
+	cursor: pointer;
+}
+
+/* universal */
+
 [ui-view].ng-enter, [ui-view].ng-leave {
   -moz-transition:all .5s;
   -o-transition:all .5s;
@@ -553,4 +559,3 @@ button:focus {outline:0;}
 .direction-r .descript {
   margin: 1em 0 0 0.75em;
 }
-
