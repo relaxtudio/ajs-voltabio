@@ -14,8 +14,8 @@
 		</div>
 	</div>
 	<div class="client-list" style="margin-left:20px;">
-		<p>For more detailed information about our client <button>CLICK HERE</button></p>
-		<table class="client-det" cellpadding=5>
+		<p>For more detailed information about our client <button ng-click="content = !content">CLICK HERE</button></p>
+		<table class="client-det" cellpadding=5 ng-show="content">
 		  <tr>
 			<th>Category</th>
 			<th>Company</th>

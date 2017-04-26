@@ -2,15 +2,15 @@
 	<div class="bottom-border">	
 		<h1 class="blue" style="margin-left:20px;">Service and Product</h1>
 			<ul class="serv-prod" style="margin-left:40px;">
-				<li class="v-sub" ng-click="content = 'service'"><a style="margin-left: -40px;">Our Service</a></li>
-				<li class="v-sub" ng-click="content = 'product'"><a style="margin-left: -40px;">Our Product</a></li>
+				<li class="v-sub" ng-click="mainContent = 'service'"><a style="margin-left: -40px;">Our Service</a></li>
+				<li class="v-sub" ng-click="mainContent = 'product'"><a style="margin-left: -40px;">Our Product</a></li>
 			</ul>
 	</div>	
 	<div>
-		<ng-include src="'templates/content/serv-service.html'"></ng-include>
+		<ng-include src="'templates/content/serv-service.html'" ng-show="mainContent == 'service'"></ng-include>
 	</div>
 	<div>
-		<ng-include src="'templates/content/serv-product.html'"></ng-include>
+		<ng-include src="'templates/content/serv-product.html'" ng-show="mainContent == 'product'"></ng-include>
 	</div>
 </div>
 <ng-include src="'includes/footer.html'"></ng-include>

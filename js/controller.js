@@ -51,7 +51,8 @@ ajs.controller('VoltabioCtrl', function($scope, $state) {
 
 ajs.controller('ServiceCtrl', function($scope) {
 	$scope.$parent.select = 4;
-	$scope.content = 'default';
+	$scope.mainContent = 'service';
+	$scope.content = 'gilingan';
 })
 
 ajs.controller('ClientCtrl', function($scope) {
