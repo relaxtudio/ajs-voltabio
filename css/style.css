@@ -252,8 +252,12 @@ button:focus {outline:0;}
 	border-collapse: collapse;
 }
 
-.client-det td, .client-det th, .produk-det td, .produk-det th{
+.client-det td, .client-det th, .produk-det td, .produk-det th {
 	border: 1px solid black;
+}
+
+.fav-article {
+	border: 1px solid #bfbfbf;
 }
 
 .award {
