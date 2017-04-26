@@ -219,7 +219,7 @@ button:focus {outline:0;}
 	grid-template-columns: 540px 440px;
 }
 
-.volt-sub {
+.volt-sub, .serv-prod {
     text-indent: .5em;
     border-left: .25em solid gray;
 	margin-top: -1.25em;
@@ -256,6 +256,13 @@ button:focus {outline:0;}
 	border: 1px solid black;
 }
 
+.award {
+	width: 200px;
+}
+
+.csr-act {
+	width: 300px;
+}
 .grid {
 	margin-top: 10px;
 	float: left;
