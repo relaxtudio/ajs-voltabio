@@ -49,9 +49,13 @@ ajs.controller('VoltabioCtrl', function($scope, $state) {
 	}
 })
 
-ajs.controller('ServiceCtrl', function($scope) {
+ajs.controller('ServiceCtrl', function($scope, $state) {
 	$scope.$parent.select = 4;
 	$scope.mainContent = 'service';
+	var page = $state.params.page;
+	if (page == 'product') {
+		$scope.mainContent = 'product';
+	}
 	$scope.content = 'gilingan';
 })
 
