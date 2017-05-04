@@ -104,7 +104,7 @@ button:focus {outline:0;}
 
 .content .contact-info .phone {
 	width: 260px;
-}	
+}
 
 .content .contact-info .label {
 	font-size: 20px;
@@ -213,10 +213,14 @@ button:focus {outline:0;}
 	display: grid;
 	grid-template-columns: 340px 640px;
 }
-.grid-wrap-legal {
+.legal-1 {
 	margin-top: 10px;
-	display: grid;
-	grid-template-columns: 540px 440px;
+	width: 580px;
+}
+
+.legal-2 {
+	margin-top: 10px;
+	width: 400px;
 }
 
 .volt-sub, .serv-prod {
