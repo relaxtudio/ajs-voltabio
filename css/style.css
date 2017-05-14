@@ -12,6 +12,7 @@ body {
 
 button, a {
 	cursor: pointer;
+	text-decoration:none;
 }
 
 button:focus {outline:0;}
@@ -322,6 +323,7 @@ button:focus {outline:0;}
 
 .about {
 	text-align: center;
+	
 }
 
 svg {
