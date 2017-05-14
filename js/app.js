@@ -64,4 +64,13 @@ ajs.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+		.state('about', {
+			url: '/about',
+			views: {
+				'content': {
+					templateUrl: 'templates/about.html',
+					controller: 'AboutCtrl'
+				}
+			}
+		})
 })

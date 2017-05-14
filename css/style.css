@@ -320,6 +320,23 @@ button:focus {outline:0;}
 	max-width: 100%;
 }
 
+.about {
+	text-align: center;
+}
+
+svg {
+	width: 200px;
+	height: 200px;
+	transition: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+svg:hover {
+	fill: #264;
+}
+
 /* universal */
 
 [ui-view].ng-enter, [ui-view].ng-leave {

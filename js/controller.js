@@ -62,3 +62,7 @@ ajs.controller('ServiceCtrl', function($scope, $state) {
 ajs.controller('ClientCtrl', function($scope) {
 	$scope.$parent.select = 5;
 })
+
+ajs.controller('AboutCtrl', function($scope) {
+	$scope.$parent.select = 6;
+})
